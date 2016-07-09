@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		9FA41E621D315A650095AD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E611D315A650095AD20 /* AppDelegate.swift */; };
-		9FA41E641D315A650095AD20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E631D315A650095AD20 /* ViewController.swift */; };
-		9FA41E671D315A650095AD20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA41E651D315A650095AD20 /* Main.storyboard */; };
+		9FA41E641D315A650095AD20 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E631D315A650095AD20 /* DrawingViewController.swift */; };
+		9FA41E671D315A650095AD20 /* Canvas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA41E651D315A650095AD20 /* Canvas.storyboard */; };
 		9FA41E6A1D315A650095AD20 /* Conspectus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E681D315A650095AD20 /* Conspectus.xcdatamodeld */; };
 		9FA41E6C1D315A650095AD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA41E6B1D315A650095AD20 /* Assets.xcassets */; };
 		9FA41E6F1D315A650095AD20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA41E6D1D315A650095AD20 /* LaunchScreen.storyboard */; };
 		9FA41E7A1D315A660095AD20 /* ConspectusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E791D315A660095AD20 /* ConspectusTests.swift */; };
 		9FA41E851D315A660095AD20 /* ConspectusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E841D315A660095AD20 /* ConspectusUITests.swift */; };
 		9FA41E931D315B4F0095AD20 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E921D315B4F0095AD20 /* CanvasView.swift */; };
+		F57113C01D31779200FDA679 /* Discipline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57113BF1D31779200FDA679 /* Discipline.swift */; };
+		F57113C21D31830D00FDA679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57113C11D31830D00FDA679 /* Main.storyboard */; };
+		F57113C51D31842C00FDA679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57113C41D31842C00FDA679 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,8 @@
 /* Begin PBXFileReference section */
 		9FA41E5E1D315A650095AD20 /* Conspectus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conspectus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA41E611D315A650095AD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FA41E631D315A650095AD20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9FA41E661D315A650095AD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FA41E631D315A650095AD20 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		9FA41E661D315A650095AD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Canvas.storyboard; sourceTree = "<group>"; };
 		9FA41E691D315A650095AD20 /* Conspectus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Conspectus.xcdatamodel; sourceTree = "<group>"; };
 		9FA41E6B1D315A650095AD20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FA41E6E1D315A650095AD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		9FA41E841D315A660095AD20 /* ConspectusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConspectusUITests.swift; sourceTree = "<group>"; };
 		9FA41E861D315A660095AD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FA41E921D315B4F0095AD20 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		F57113BF1D31779200FDA679 /* Discipline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discipline.swift; sourceTree = "<group>"; usesTabs = 1; };
+		F57113C11D31830D00FDA679 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F57113C41D31842C00FDA679 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,8 @@
 				9FA41E5F1D315A650095AD20 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
+			wrapsLines = 0;
 		};
 		9FA41E5F1D315A650095AD20 /* Products */ = {
 			isa = PBXGroup;
@@ -101,14 +109,12 @@
 		9FA41E601D315A650095AD20 /* Conspectus */ = {
 			isa = PBXGroup;
 			children = (
-				9FA41E611D315A650095AD20 /* AppDelegate.swift */,
-				9FA41E631D315A650095AD20 /* ViewController.swift */,
-				9FA41E921D315B4F0095AD20 /* CanvasView.swift */,
-				9FA41E651D315A650095AD20 /* Main.storyboard */,
-				9FA41E6B1D315A650095AD20 /* Assets.xcassets */,
-				9FA41E6D1D315A650095AD20 /* LaunchScreen.storyboard */,
-				9FA41E701D315A650095AD20 /* Info.plist */,
-				9FA41E681D315A650095AD20 /* Conspectus.xcdatamodeld */,
+				F548E40B1D31759700373D84 /* Application */,
+				F57113C31D3183D500FDA679 /* MainScreen */,
+				F548E40C1D3175B300373D84 /* Drawing */,
+				F57113BE1D31767000FDA679 /* Notes */,
+				F57113BD1D31765300FDA679 /* Models */,
+				F548E40D1D3175CF00373D84 /* Supporting Files */,
 			);
 			path = Conspectus;
 			sourceTree = "<group>";
@@ -129,6 +135,59 @@
 				9FA41E861D315A660095AD20 /* Info.plist */,
 			);
 			path = ConspectusUITests;
+			sourceTree = "<group>";
+		};
+		F548E40B1D31759700373D84 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9FA41E611D315A650095AD20 /* AppDelegate.swift */,
+				9FA41E681D315A650095AD20 /* Conspectus.xcdatamodeld */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		F548E40C1D3175B300373D84 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				9FA41E631D315A650095AD20 /* DrawingViewController.swift */,
+				9FA41E921D315B4F0095AD20 /* CanvasView.swift */,
+				9FA41E651D315A650095AD20 /* Canvas.storyboard */,
+			);
+			name = Drawing;
+			sourceTree = "<group>";
+		};
+		F548E40D1D3175CF00373D84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FA41E6B1D315A650095AD20 /* Assets.xcassets */,
+				9FA41E6D1D315A650095AD20 /* LaunchScreen.storyboard */,
+				9FA41E701D315A650095AD20 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F57113BD1D31765300FDA679 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F57113BF1D31779200FDA679 /* Discipline.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F57113BE1D31767000FDA679 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Notes;
+			sourceTree = "<group>";
+		};
+		F57113C31D3183D500FDA679 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F57113C41D31842C00FDA679 /* ViewController.swift */,
+				F57113C11D31830D00FDA679 /* Main.storyboard */,
+			);
+			name = MainScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +258,7 @@
 				TargetAttributes = {
 					9FA41E5D1D315A650095AD20 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = SGBQL245BB;
+						DevelopmentTeam = 242RWR2WE3;
 					};
 					9FA41E741D315A660095AD20 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -240,7 +299,8 @@
 			files = (
 				9FA41E6F1D315A650095AD20 /* LaunchScreen.storyboard in Resources */,
 				9FA41E6C1D315A650095AD20 /* Assets.xcassets in Resources */,
-				9FA41E671D315A650095AD20 /* Main.storyboard in Resources */,
+				9FA41E671D315A650095AD20 /* Canvas.storyboard in Resources */,
+				F57113C21D31830D00FDA679 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57113C51D31842C00FDA679 /* ViewController.swift in Sources */,
+				F57113C01D31779200FDA679 /* Discipline.swift in Sources */,
 				9FA41E6A1D315A650095AD20 /* Conspectus.xcdatamodeld in Sources */,
-				9FA41E641D315A650095AD20 /* ViewController.swift in Sources */,
+				9FA41E641D315A650095AD20 /* DrawingViewController.swift in Sources */,
 				9FA41E931D315B4F0095AD20 /* CanvasView.swift in Sources */,
 				9FA41E621D315A650095AD20 /* AppDelegate.swift in Sources */,
 			);
@@ -304,12 +366,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9FA41E651D315A650095AD20 /* Main.storyboard */ = {
+		9FA41E651D315A650095AD20 /* Canvas.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9FA41E661D315A650095AD20 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Canvas.storyboard;
 			sourceTree = "<group>";
 		};
 		9FA41E6D1D315A650095AD20 /* LaunchScreen.storyboard */ = {
@@ -412,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Conspectus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PinkElephants.Conspectus;
@@ -423,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Conspectus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PinkElephants.Conspectus;
@@ -495,6 +559,7 @@
 				9FA41E8B1D315A660095AD20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FA41E8C1D315A660095AD20 /* Build configuration list for PBXNativeTarget "ConspectusTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +568,7 @@
 				9FA41E8E1D315A660095AD20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FA41E8F1D315A660095AD20 /* Build configuration list for PBXNativeTarget "ConspectusUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +577,7 @@
 				9FA41E911D315A660095AD20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

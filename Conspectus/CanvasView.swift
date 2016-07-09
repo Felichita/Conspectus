@@ -3,7 +3,7 @@
 //  Conspectus
 //
 //  Created by Федор Николаев on 09.07.16.
-//  Copyright © 2016 Fedor Nikolaev. All rights reserved.
+//  Copyright © 2016 Pink Elephants. All rights reserved.
 //
 
 import Foundation
