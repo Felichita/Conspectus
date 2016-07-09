@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FA41E621D315A650095AD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E611D315A650095AD20 /* AppDelegate.swift */; };
+		9FA41E641D315A650095AD20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E631D315A650095AD20 /* ViewController.swift */; };
+		9FA41E671D315A650095AD20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA41E651D315A650095AD20 /* Main.storyboard */; };
+		9FA41E6A1D315A650095AD20 /* Conspectus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E681D315A650095AD20 /* Conspectus.xcdatamodeld */; };
+		9FA41E6C1D315A650095AD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA41E6B1D315A650095AD20 /* Assets.xcassets */; };
+		9FA41E6F1D315A650095AD20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA41E6D1D315A650095AD20 /* LaunchScreen.storyboard */; };
+		9FA41E7A1D315A660095AD20 /* ConspectusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E791D315A660095AD20 /* ConspectusTests.swift */; };
+		9FA41E851D315A660095AD20 /* ConspectusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E841D315A660095AD20 /* ConspectusUITests.swift */; };
+		9FA41E931D315B4F0095AD20 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E921D315B4F0095AD20 /* CanvasView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FA41E761D315A660095AD20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FA41E561D315A650095AD20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FA41E5D1D315A650095AD20;
+			remoteInfo = Conspectus;
+		};
+		9FA41E811D315A660095AD20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FA41E561D315A650095AD20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FA41E5D1D315A650095AD20;
+			remoteInfo = Conspectus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FA41E5E1D315A650095AD20 /* Conspectus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conspectus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA41E611D315A650095AD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FA41E631D315A650095AD20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FA41E661D315A650095AD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FA41E691D315A650095AD20 /* Conspectus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Conspectus.xcdatamodel; sourceTree = "<group>"; };
+		9FA41E6B1D315A650095AD20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FA41E6E1D315A650095AD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FA41E701D315A650095AD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA41E751D315A660095AD20 /* ConspectusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConspectusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA41E791D315A660095AD20 /* ConspectusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConspectusTests.swift; sourceTree = "<group>"; };
+		9FA41E7B1D315A660095AD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA41E801D315A660095AD20 /* ConspectusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConspectusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA41E841D315A660095AD20 /* ConspectusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConspectusUITests.swift; sourceTree = "<group>"; };
+		9FA41E861D315A660095AD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA41E921D315B4F0095AD20 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FA41E5B1D315A650095AD20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA41E721D315A660095AD20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA41E7D1D315A660095AD20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FA41E551D315A650095AD20 = {
+			isa = PBXGroup;
+			children = (
+				9FA41E601D315A650095AD20 /* Conspectus */,
+				9FA41E781D315A660095AD20 /* ConspectusTests */,
+				9FA41E831D315A660095AD20 /* ConspectusUITests */,
+				9FA41E5F1D315A650095AD20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FA41E5F1D315A650095AD20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FA41E5E1D315A650095AD20 /* Conspectus.app */,
+				9FA41E751D315A660095AD20 /* ConspectusTests.xctest */,
+				9FA41E801D315A660095AD20 /* ConspectusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA41E601D315A650095AD20 /* Conspectus */ = {
+			isa = PBXGroup;
+			children = (
+				9FA41E611D315A650095AD20 /* AppDelegate.swift */,
+				9FA41E631D315A650095AD20 /* ViewController.swift */,
+				9FA41E921D315B4F0095AD20 /* CanvasView.swift */,
+				9FA41E651D315A650095AD20 /* Main.storyboard */,
+				9FA41E6B1D315A650095AD20 /* Assets.xcassets */,
+				9FA41E6D1D315A650095AD20 /* LaunchScreen.storyboard */,
+				9FA41E701D315A650095AD20 /* Info.plist */,
+				9FA41E681D315A650095AD20 /* Conspectus.xcdatamodeld */,
+			);
+			path = Conspectus;
+			sourceTree = "<group>";
+		};
+		9FA41E781D315A660095AD20 /* ConspectusTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FA41E791D315A660095AD20 /* ConspectusTests.swift */,
+				9FA41E7B1D315A660095AD20 /* Info.plist */,
+			);
+			path = ConspectusTests;
+			sourceTree = "<group>";
+		};
+		9FA41E831D315A660095AD20 /* ConspectusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FA41E841D315A660095AD20 /* ConspectusUITests.swift */,
+				9FA41E861D315A660095AD20 /* Info.plist */,
+			);
+			path = ConspectusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FA41E5D1D315A650095AD20 /* Conspectus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA41E891D315A660095AD20 /* Build configuration list for PBXNativeTarget "Conspectus" */;
+			buildPhases = (
+				9FA41E5A1D315A650095AD20 /* Sources */,
+				9FA41E5B1D315A650095AD20 /* Frameworks */,
+				9FA41E5C1D315A650095AD20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Conspectus;
+			productName = Conspectus;
+			productReference = 9FA41E5E1D315A650095AD20 /* Conspectus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FA41E741D315A660095AD20 /* ConspectusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA41E8C1D315A660095AD20 /* Build configuration list for PBXNativeTarget "ConspectusTests" */;
+			buildPhases = (
+				9FA41E711D315A660095AD20 /* Sources */,
+				9FA41E721D315A660095AD20 /* Frameworks */,
+				9FA41E731D315A660095AD20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA41E771D315A660095AD20 /* PBXTargetDependency */,
+			);
+			name = ConspectusTests;
+			productName = ConspectusTests;
+			productReference = 9FA41E751D315A660095AD20 /* ConspectusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FA41E7F1D315A660095AD20 /* ConspectusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA41E8F1D315A660095AD20 /* Build configuration list for PBXNativeTarget "ConspectusUITests" */;
+			buildPhases = (
+				9FA41E7C1D315A660095AD20 /* Sources */,
+				9FA41E7D1D315A660095AD20 /* Frameworks */,
+				9FA41E7E1D315A660095AD20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA41E821D315A660095AD20 /* PBXTargetDependency */,
+			);
+			name = ConspectusUITests;
+			productName = ConspectusUITests;
+			productReference = 9FA41E801D315A660095AD20 /* ConspectusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FA41E561D315A650095AD20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Fedor Nikolaev";
+				TargetAttributes = {
+					9FA41E5D1D315A650095AD20 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SGBQL245BB;
+					};
+					9FA41E741D315A660095AD20 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SGBQL245BB;
+						TestTargetID = 9FA41E5D1D315A650095AD20;
+					};
+					9FA41E7F1D315A660095AD20 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SGBQL245BB;
+						TestTargetID = 9FA41E5D1D315A650095AD20;
+					};
+				};
+			};
+			buildConfigurationList = 9FA41E591D315A650095AD20 /* Build configuration list for PBXProject "Conspectus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FA41E551D315A650095AD20;
+			productRefGroup = 9FA41E5F1D315A650095AD20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FA41E5D1D315A650095AD20 /* Conspectus */,
+				9FA41E741D315A660095AD20 /* ConspectusTests */,
+				9FA41E7F1D315A660095AD20 /* ConspectusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FA41E5C1D315A650095AD20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA41E6F1D315A650095AD20 /* LaunchScreen.storyboard in Resources */,
+				9FA41E6C1D315A650095AD20 /* Assets.xcassets in Resources */,
+				9FA41E671D315A650095AD20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA41E731D315A660095AD20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA41E7E1D315A660095AD20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FA41E5A1D315A650095AD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA41E6A1D315A650095AD20 /* Conspectus.xcdatamodeld in Sources */,
+				9FA41E641D315A650095AD20 /* ViewController.swift in Sources */,
+				9FA41E931D315B4F0095AD20 /* CanvasView.swift in Sources */,
+				9FA41E621D315A650095AD20 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA41E711D315A660095AD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA41E7A1D315A660095AD20 /* ConspectusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA41E7C1D315A660095AD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA41E851D315A660095AD20 /* ConspectusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FA41E771D315A660095AD20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FA41E5D1D315A650095AD20 /* Conspectus */;
+			targetProxy = 9FA41E761D315A660095AD20 /* PBXContainerItemProxy */;
+		};
+		9FA41E821D315A660095AD20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FA41E5D1D315A650095AD20 /* Conspectus */;
+			targetProxy = 9FA41E811D315A660095AD20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FA41E651D315A650095AD20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA41E661D315A650095AD20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FA41E6D1D315A650095AD20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA41E6E1D315A650095AD20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FA41E871D315A660095AD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		9FA41E881D315A660095AD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FA41E8A1D315A660095AD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Conspectus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PinkElephants.Conspectus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9FA41E8B1D315A660095AD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Conspectus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PinkElephants.Conspectus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9FA41E8D1D315A660095AD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ConspectusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PinkElephants.ConspectusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Conspectus.app/Conspectus";
+			};
+			name = Debug;
+		};
+		9FA41E8E1D315A660095AD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ConspectusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PinkElephants.ConspectusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Conspectus.app/Conspectus";
+			};
+			name = Release;
+		};
+		9FA41E901D315A660095AD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ConspectusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PinkElephants.ConspectusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Conspectus;
+			};
+			name = Debug;
+		};
+		9FA41E911D315A660095AD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ConspectusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PinkElephants.ConspectusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Conspectus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FA41E591D315A650095AD20 /* Build configuration list for PBXProject "Conspectus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA41E871D315A660095AD20 /* Debug */,
+				9FA41E881D315A660095AD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA41E891D315A660095AD20 /* Build configuration list for PBXNativeTarget "Conspectus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA41E8A1D315A660095AD20 /* Debug */,
+				9FA41E8B1D315A660095AD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9FA41E8C1D315A660095AD20 /* Build configuration list for PBXNativeTarget "ConspectusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA41E8D1D315A660095AD20 /* Debug */,
+				9FA41E8E1D315A660095AD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9FA41E8F1D315A660095AD20 /* Build configuration list for PBXNativeTarget "ConspectusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA41E901D315A660095AD20 /* Debug */,
+				9FA41E911D315A660095AD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9FA41E681D315A650095AD20 /* Conspectus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9FA41E691D315A650095AD20 /* Conspectus.xcdatamodel */,
+			);
+			currentVersion = 9FA41E691D315A650095AD20 /* Conspectus.xcdatamodel */;
+			path = Conspectus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9FA41E561D315A650095AD20 /* Project object */;
+}
