@@ -8,21 +8,24 @@
 
 import UIKit
 
+func getDocumentsURL() -> NSURL {
+	let documentsURL = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
+	return documentsURL
+}
+
+func fileInDocumentsDirectory(filename: String) -> String {
+	
+	let fileURL = getDocumentsURL().URLByAppendingPathComponent(filename)
+	print(fileURL)
+	return fileURL.path!
+	
+}
+
 class DrawingViewController: UIViewController {
 
 	
     @IBOutlet weak var permanentView: CanvasView!
 	
-	var lastPoint = CGPoint.zero
-	var red: CGFloat = 0.0
-	var green: CGFloat = 0.0
-	var blue: CGFloat = 0.0
-	var brushWidth: CGFloat = 10.0
-	var opacity: CGFloat = 1.0
-	var swiped = false
-	
-	let colors: [(CGFloat, CGFloat, CGFloat)] = [(0, 0, 0)]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 		permanentView.clearCanvas(animated: true)
@@ -31,8 +34,34 @@ class DrawingViewController: UIViewController {
     }
 
     @IBAction func Clear(sender: AnyObject) {
-        permanentView.image = nil
+		let myImageName = "image.png"
+		let imagePath = fileInDocumentsDirectory(myImageName)
+		
+		if let image = permanentView.image{
+			saveImage(image, path: imagePath)
+		}else{
+			print("some error message")
+		}
+		
+		permanentView.image = nil
+	
     }
 	
+	func saveImage(image: UIImage, path: String) -> Bool{
+		let pngImageData = UIImagePNGRepresentation(image)
+		let result = pngImageData!.writeToFile(path,atomically: true)
+		
+		return result
+	}
+	
+	func loadImageFromPath(path: String) -> UIImage? {
+		let image = UIImage(contentsOfFile: path)
+		if image == nil {
+			
+			print ("missing image at: \(path)")
+		}
+		print("Loading image from path: \(path)")
+		return image
+	}
 
 }
