@@ -15,8 +15,8 @@ class DrawingViewController: UIViewController {
     @IBOutlet weak var permanentView: CanvasView!
 	
     override func viewDidLoad() {
-        super.viewDidLoad()
-        canvasView.clearCanvas(animated:false)
+		super.viewDidLoad()
+		permanentView.clearCanvas(animated: true)
     }
 
     @IBAction func Clear(sender: AnyObject) {
@@ -35,7 +35,6 @@ class DrawingViewController: UIViewController {
 	func loadImageFromPath(path: String) -> UIImage? {
 		let image = UIImage(contentsOfFile: path)
 		if image == nil {
-			
 			print ("missing image at: \(path)")
 		}
 		print("Loading image from path: \(path)")

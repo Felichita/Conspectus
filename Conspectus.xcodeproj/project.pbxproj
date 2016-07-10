@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F03F1B71D31C4EE004B01C7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F03F1B61D31C4EE004B01C7 /* Note.swift */; };
-		9FA41E621D315A650095AD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E611D315A650095AD20 /* AppDelegate.swift */; };
-		9FA41E641D315A650095AD20 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E631D315A650095AD20 /* DrawingViewController.swift */; };
 		9FA41E671D315A650095AD20 /* Canvas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA41E651D315A650095AD20 /* Canvas.storyboard */; };
-		9FA41E6A1D315A650095AD20 /* Conspectus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E681D315A650095AD20 /* Conspectus.xcdatamodeld */; };
 		9FA41E6C1D315A650095AD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA41E6B1D315A650095AD20 /* Assets.xcassets */; };
 		9FA41E6F1D315A650095AD20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA41E6D1D315A650095AD20 /* LaunchScreen.storyboard */; };
 		9FA41E7A1D315A660095AD20 /* ConspectusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E791D315A660095AD20 /* ConspectusTests.swift */; };
 		9FA41E851D315A660095AD20 /* ConspectusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E841D315A660095AD20 /* ConspectusUITests.swift */; };
-		9FA41E931D315B4F0095AD20 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E921D315B4F0095AD20 /* CanvasView.swift */; };
-		F500ADCF1D31EC6C00BC4E5F /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500ADCE1D31EC6C00BC4E5F /* Notes.swift */; };
-		F57113C01D31779200FDA679 /* Disciplines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57113BF1D31779200FDA679 /* Disciplines.swift */; };
+		F511198A1D31FACD0075B71F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E611D315A650095AD20 /* AppDelegate.swift */; };
+		F511198B1D31FACD0075B71F /* Conspectus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E681D315A650095AD20 /* Conspectus.xcdatamodeld */; };
+		F511198C1D31FACD0075B71F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57113C41D31842C00FDA679 /* ViewController.swift */; };
+		F511198D1D31FACD0075B71F /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E631D315A650095AD20 /* DrawingViewController.swift */; };
+		F511198E1D31FACD0075B71F /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E921D315B4F0095AD20 /* CanvasView.swift */; };
+		F511198F1D31FACD0075B71F /* Disciplines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57113BF1D31779200FDA679 /* Disciplines.swift */; };
+		F51119901D31FACD0075B71F /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500ADCE1D31EC6C00BC4E5F /* Notes.swift */; };
 		F57113C21D31830D00FDA679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57113C11D31830D00FDA679 /* Main.storyboard */; };
-		F57113C51D31842C00FDA679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57113C41D31842C00FDA679 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9F03F1B61D31C4EE004B01C7 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		9FA41E5E1D315A650095AD20 /* Conspectus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conspectus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA41E611D315A650095AD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FA41E631D315A650095AD20 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 		F57113BE1D31767000FDA679 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				9F03F1B61D31C4EE004B01C7 /* Note.swift */,
 			);
 			name = Notes;
 			sourceTree = "<group>";
@@ -203,7 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FA41E891D315A660095AD20 /* Build configuration list for PBXNativeTarget "Conspectus" */;
 			buildPhases = (
-				9FA41E5A1D315A650095AD20 /* Sources */,
+				F51119891D31FAB30075B71F /* Sources */,
 				9FA41E5B1D315A650095AD20 /* Frameworks */,
 				9FA41E5C1D315A650095AD20 /* Resources */,
 			);
@@ -327,20 +324,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9FA41E5A1D315A650095AD20 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F57113C51D31842C00FDA679 /* ViewController.swift in Sources */,
-				F500ADCF1D31EC6C00BC4E5F /* Notes.swift in Sources */,
-				F57113C01D31779200FDA679 /* Disciplines.swift in Sources */,
-				9FA41E6A1D315A650095AD20 /* Conspectus.xcdatamodeld in Sources */,
-				9FA41E641D315A650095AD20 /* DrawingViewController.swift in Sources */,
-				9FA41E931D315B4F0095AD20 /* CanvasView.swift in Sources */,
-				9FA41E621D315A650095AD20 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9FA41E711D315A660095AD20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +337,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA41E851D315A660095AD20 /* ConspectusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51119891D31FAB30075B71F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F511198A1D31FACD0075B71F /* AppDelegate.swift in Sources */,
+				F511198B1D31FACD0075B71F /* Conspectus.xcdatamodeld in Sources */,
+				F511198C1D31FACD0075B71F /* ViewController.swift in Sources */,
+				F511198D1D31FACD0075B71F /* DrawingViewController.swift in Sources */,
+				F511198E1D31FACD0075B71F /* CanvasView.swift in Sources */,
+				F511198F1D31FACD0075B71F /* Disciplines.swift in Sources */,
+				F51119901D31FACD0075B71F /* Notes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
