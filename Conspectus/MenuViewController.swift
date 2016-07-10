@@ -57,14 +57,16 @@ class MenuViewController: UITableViewController {
 		return view
 	}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	// MARK: - Navigation
+	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+		let title = disciplines.list[indexPath.row].name
+		let navController = self.revealViewController().frontViewController as? UINavigationController
+		navController?.visibleViewController?.navigationItem.title = "# \(title)"
+		self.revealViewController().revealToggleAnimated(true)
+	}
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		
+	}
 
 }
