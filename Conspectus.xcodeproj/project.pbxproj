@@ -19,7 +19,10 @@
 		F511198E1D31FACD0075B71F /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E921D315B4F0095AD20 /* CanvasView.swift */; };
 		F511198F1D31FACD0075B71F /* Disciplines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57113BF1D31779200FDA679 /* Disciplines.swift */; };
 		F51119901D31FACD0075B71F /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500ADCE1D31EC6C00BC4E5F /* Notes.swift */; };
-		F57113C21D31830D00FDA679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57113C11D31830D00FDA679 /* Main.storyboard */; };
+		F51119951D3201910075B71F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51119941D3201910075B71F /* SWRevealViewController.m */; };
+		F51119971D3209CA0075B71F /* NotesBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51119961D3209CA0075B71F /* NotesBoardViewController.swift */; };
+		F511199C1D320CF80075B71F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511199B1D320CF80075B71F /* MenuViewController.swift */; };
+		F57113C21D31830D00FDA679 /* NotesBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57113C11D31830D00FDA679 /* NotesBoard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +59,13 @@
 		9FA41E861D315A660095AD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FA41E921D315B4F0095AD20 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		F500ADCE1D31EC6C00BC4E5F /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		F51119921D3201900075B71F /* Conspectus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Conspectus-Bridging-Header.h"; sourceTree = "<group>"; };
+		F51119931D3201910075B71F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F51119941D3201910075B71F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F51119961D3209CA0075B71F /* NotesBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesBoardViewController.swift; sourceTree = "<group>"; };
+		F511199B1D320CF80075B71F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F57113BF1D31779200FDA679 /* Disciplines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disciplines.swift; sourceTree = "<group>"; usesTabs = 1; };
-		F57113C11D31830D00FDA679 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F57113C11D31830D00FDA679 /* NotesBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotesBoard.storyboard; sourceTree = "<group>"; };
 		F57113C41D31842C00FDA679 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,8 +121,9 @@
 			children = (
 				F548E40B1D31759700373D84 /* Application */,
 				F57113C31D3183D500FDA679 /* MainScreen */,
+				F51119981D320CAE0075B71F /* Menu */,
 				F548E40C1D3175B300373D84 /* Drawing */,
-				F57113BE1D31767000FDA679 /* Notes */,
+				F57113BE1D31767000FDA679 /* NotesBoard */,
 				F57113BD1D31765300FDA679 /* Models */,
 				F548E40D1D3175CF00373D84 /* Supporting Files */,
 			);
@@ -139,6 +148,24 @@
 			path = ConspectusUITests;
 			sourceTree = "<group>";
 		};
+		F51119911D31FFFB0075B71F /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F51119931D3201910075B71F /* SWRevealViewController.h */,
+				F51119941D3201910075B71F /* SWRevealViewController.m */,
+				F51119921D3201900075B71F /* Conspectus-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		F51119981D320CAE0075B71F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F511199B1D320CF80075B71F /* MenuViewController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
 		F548E40B1D31759700373D84 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +188,7 @@
 		F548E40D1D3175CF00373D84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F51119911D31FFFB0075B71F /* SWRevealViewController */,
 				9FA41E6B1D315A650095AD20 /* Assets.xcassets */,
 				9FA41E6D1D315A650095AD20 /* LaunchScreen.storyboard */,
 				9FA41E701D315A650095AD20 /* Info.plist */,
@@ -177,18 +205,19 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		F57113BE1D31767000FDA679 /* Notes */ = {
+		F57113BE1D31767000FDA679 /* NotesBoard */ = {
 			isa = PBXGroup;
 			children = (
+				F51119961D3209CA0075B71F /* NotesBoardViewController.swift */,
+				F57113C11D31830D00FDA679 /* NotesBoard.storyboard */,
 			);
-			name = Notes;
+			name = NotesBoard;
 			sourceTree = "<group>";
 		};
 		F57113C31D3183D500FDA679 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
 				F57113C41D31842C00FDA679 /* ViewController.swift */,
-				F57113C11D31830D00FDA679 /* Main.storyboard */,
 			);
 			name = MainScreen;
 			sourceTree = "<group>";
@@ -303,7 +332,7 @@
 				9FA41E6F1D315A650095AD20 /* LaunchScreen.storyboard in Resources */,
 				9FA41E6C1D315A650095AD20 /* Assets.xcassets in Resources */,
 				9FA41E671D315A650095AD20 /* Canvas.storyboard in Resources */,
-				F57113C21D31830D00FDA679 /* Main.storyboard in Resources */,
+				F57113C21D31830D00FDA679 /* NotesBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,8 +374,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F511198A1D31FACD0075B71F /* AppDelegate.swift in Sources */,
+				F511199C1D320CF80075B71F /* MenuViewController.swift in Sources */,
 				F511198B1D31FACD0075B71F /* Conspectus.xcdatamodeld in Sources */,
 				F511198C1D31FACD0075B71F /* ViewController.swift in Sources */,
+				F51119971D3209CA0075B71F /* NotesBoardViewController.swift in Sources */,
+				F51119951D3201910075B71F /* SWRevealViewController.m in Sources */,
 				F511198D1D31FACD0075B71F /* DrawingViewController.swift in Sources */,
 				F511198E1D31FACD0075B71F /* CanvasView.swift in Sources */,
 				F511198F1D31FACD0075B71F /* Disciplines.swift in Sources */,
@@ -478,11 +510,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Conspectus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PinkElephants.Conspectus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Conspectus/Conspectus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -490,11 +525,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Conspectus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PinkElephants.Conspectus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Conspectus/Conspectus-Bridging-Header.h";
 			};
 			name = Release;
 		};

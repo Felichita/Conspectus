@@ -12,13 +12,6 @@ class ViewController: UIViewController {
 
 	let disciplines = Disciplines()
 	
-    @IBAction func goDraw(sender: UIButton) {
-		let targetStoryboard = UIStoryboard(name: "Canvas", bundle: nil)
-		if let targetViewController = targetStoryboard.instantiateInitialViewController() {
-			self.navigationController?.pushViewController(targetViewController, animated: true)
-		}
-    }
-	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		disciplines.load()
