@@ -19,7 +19,6 @@
 		F57113C01D31779200FDA679 /* Disciplines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57113BF1D31779200FDA679 /* Disciplines.swift */; };
 		F57113C21D31830D00FDA679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57113C11D31830D00FDA679 /* Main.storyboard */; };
 		F57113C51D31842C00FDA679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57113C41D31842C00FDA679 /* ViewController.swift */; };
-		F57113C81D31A89D00FDA679 /* Discipline.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F57113C61D31A89D00FDA679 /* Discipline.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +57,6 @@
 		F57113BF1D31779200FDA679 /* Disciplines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disciplines.swift; sourceTree = "<group>"; usesTabs = 1; };
 		F57113C11D31830D00FDA679 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F57113C41D31842C00FDA679 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F57113C71D31A89D00FDA679 /* Discipline.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Discipline.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				F57113BF1D31779200FDA679 /* Disciplines.swift */,
-				F57113C61D31A89D00FDA679 /* Discipline.xcdatamodeld */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -331,7 +328,6 @@
 				F57113C51D31842C00FDA679 /* ViewController.swift in Sources */,
 				F57113C01D31779200FDA679 /* Disciplines.swift in Sources */,
 				9FA41E6A1D315A650095AD20 /* Conspectus.xcdatamodeld in Sources */,
-				F57113C81D31A89D00FDA679 /* Discipline.xcdatamodeld in Sources */,
 				9FA41E641D315A650095AD20 /* DrawingViewController.swift in Sources */,
 				9FA41E931D315B4F0095AD20 /* CanvasView.swift in Sources */,
 				9FA41E621D315A650095AD20 /* AppDelegate.swift in Sources */,
@@ -593,16 +589,6 @@
 			);
 			currentVersion = 9FA41E691D315A650095AD20 /* Conspectus.xcdatamodel */;
 			path = Conspectus.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		F57113C61D31A89D00FDA679 /* Discipline.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F57113C71D31A89D00FDA679 /* Discipline.xcdatamodel */,
-			);
-			currentVersion = F57113C71D31A89D00FDA679 /* Discipline.xcdatamodel */;
-			path = Discipline.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

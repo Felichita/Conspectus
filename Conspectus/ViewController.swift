@@ -20,6 +20,13 @@ class ViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
+//		let disciplines = Disciplines()
+//		disciplines.add("Матан")
+//		print(disciplines)
+//		disciplines.load()
+//		print(disciplines)
+
 	}
 	
 }
