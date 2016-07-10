@@ -32,5 +32,14 @@ class ConspectusTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+	
+	func testDisciplines() {
+		let disciplines = Disciplines()
+		disciplines.add("Матан")
+		print(disciplines)
+		disciplines.load()
+		print(disciplines)
+		
+	}
     
 }

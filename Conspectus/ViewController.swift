@@ -13,7 +13,6 @@ class ViewController: UIViewController {
 	
     @IBAction func goDraw(sender: UIButton) {
 		let targetStoryboard = UIStoryboard(name: "Canvas", bundle: nil)
-		print(self.navigationController)
 		if let targetViewController = targetStoryboard.instantiateInitialViewController() {
 			self.navigationController?.pushViewController(targetViewController, animated: true)
 		}

@@ -15,7 +15,6 @@ class DrawingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         canvasView.clearCanvas(animated:false)
-		print("canvas loaded")
     }
 
 
