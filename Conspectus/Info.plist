@@ -25,9 +25,9 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>Loader</string>
 	<key>UIMainStoryboardFile~ipad</key>
-	<string>NotesBoard</string>
+	<string>Loader</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

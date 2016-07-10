@@ -10,7 +10,7 @@ import UIKit
 
 class NotesBoardViewController: UICollectionViewController {
 	
-	let navTitle = ""
+	let navTitle = "# Все записи"
 	let notes = Notes()
 	
 	private let reuseIdentifier = "Note"
@@ -27,12 +27,6 @@ class NotesBoardViewController: UICollectionViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		// Uncomment the following line to preserve selection between presentations
-		// self.clearsSelectionOnViewWillAppear = false
-		
-		// Register cell classes
-		// self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-		
 		// Do any additional setup after loading the view.
 		if self.revealViewController() != nil {
 			menuButton.target = self.revealViewController()
@@ -41,7 +35,6 @@ class NotesBoardViewController: UICollectionViewController {
 			self.revealViewController().rearViewRevealDisplacement = 0
 			self.revealViewController().rearViewRevealOverdraw = 0
 			self.revealViewController().rearViewRevealWidth = 325
-			self.revealViewController().revealToggleAnimated(true)
 		}
 	}
 	
