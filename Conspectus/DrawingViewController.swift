@@ -8,18 +8,6 @@
 
 import UIKit
 
-func getDocumentsURL() -> NSURL {
-	let documentsURL = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
-	return documentsURL
-}
-
-func fileInDocumentsDirectory(filename: String) -> String {
-	
-	let fileURL = getDocumentsURL().URLByAppendingPathComponent(filename)
-	print(fileURL)
-	return fileURL.path!
-	
-}
 
 class DrawingViewController: UIViewController {
 
@@ -34,15 +22,7 @@ class DrawingViewController: UIViewController {
     }
 
     @IBAction func Clear(sender: AnyObject) {
-		let myImageName = "image.png"
-		let imagePath = fileInDocumentsDirectory(myImageName)
-		
-		if let image = permanentView.image{
-			saveImage(image, path: imagePath)
-		}else{
-			print("some error message")
-		}
-		
+		permanentView.count = 0
 		permanentView.image = nil
 	
     }

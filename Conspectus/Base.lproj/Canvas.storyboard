@@ -18,23 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ipad retinaVPRUZINA" translatesAutoresizingMaskIntoConstraints="NO" id="ukP-5L-SMZ">
+                                <rect key="frame" x="0.0" y="-35" width="589" height="684"/>
+                            </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GNf-9l-dNe" customClass="CanvasView" customModule="Conspectus" customModuleProvider="target">
                                 <rect key="frame" x="20" y="20" width="560" height="580"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pK-Z1-V9Y">
-                                <rect key="frame" x="282" y="50" width="36" height="30"/>
+                                <rect key="frame" x="492" y="80" width="36" height="30"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="Clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="isn-nw-QlC"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.37254901960784315" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ukP-5L-SMZ" secondAttribute="trailing" constant="-9" id="0eI-L5-R0a"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ukP-5L-SMZ" secondAttribute="bottom" constant="-49" id="0n6-mj-aQ6"/>
                             <constraint firstItem="GNf-9l-dNe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1B0-1m-RPk"/>
+                            <constraint firstItem="ukP-5L-SMZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sc4-wI-ZQz"/>
                             <constraint firstItem="GNf-9l-dNe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uld-us-uY0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GNf-9l-dNe" secondAttribute="trailing" id="wKI-xZ-Fc2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GNf-9l-dNe" secondAttribute="bottom" id="wbs-jm-yOq"/>
+                            <constraint firstItem="ukP-5L-SMZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-35" id="zXV-wc-1XQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -46,4 +53,7 @@
             <point key="canvasLocation" x="278" y="339"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Ipad retinaVPRUZINA" width="1536" height="2048"/>
+    </resources>
 </document>
