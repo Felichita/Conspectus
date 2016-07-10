@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F03F1B71D31C4EE004B01C7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F03F1B61D31C4EE004B01C7 /* Note.swift */; };
 		9FA41E621D315A650095AD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E611D315A650095AD20 /* AppDelegate.swift */; };
 		9FA41E641D315A650095AD20 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E631D315A650095AD20 /* DrawingViewController.swift */; };
 		9FA41E671D315A650095AD20 /* Canvas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA41E651D315A650095AD20 /* Canvas.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F03F1B61D31C4EE004B01C7 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		9FA41E5E1D315A650095AD20 /* Conspectus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conspectus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA41E611D315A650095AD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FA41E631D315A650095AD20 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		F57113BE1D31767000FDA679 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				9F03F1B61D31C4EE004B01C7 /* Note.swift */,
 			);
 			name = Notes;
 			sourceTree = "<group>";
