@@ -41,6 +41,7 @@ class NotesBoardViewController: UICollectionViewController {
 			self.revealViewController().rearViewRevealDisplacement = 0
 			self.revealViewController().rearViewRevealOverdraw = 0
 			self.revealViewController().rearViewRevealWidth = 325
+			self.revealViewController().revealToggleAnimated(true)
 		}
 	}
 	

@@ -111,6 +111,7 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="lDY-pZ-Rak">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="Y4j-IB-OjG"/>
                         <barButtonItem key="leftBarButtonItem" image="menu" id="Ngh-KU-wwY">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
