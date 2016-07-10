@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	let disciplines = Disciplines()
 	
     @IBAction func goDraw(sender: UIButton) {
 		let targetStoryboard = UIStoryboard(name: "Canvas", bundle: nil)
@@ -20,13 +21,7 @@ class ViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
-//		let disciplines = Disciplines()
-//		disciplines.add("Матан")
-//		print(disciplines)
-//		disciplines.load()
-//		print(disciplines)
-
+		disciplines.load()
 	}
 	
 }

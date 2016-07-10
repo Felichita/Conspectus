@@ -34,11 +34,23 @@ class ConspectusTests: XCTestCase {
     }
 	
 	func testDisciplines() {
-//		let disciplines = Disciplines()
-//		disciplines.add("Матан")
-//		print(disciplines)
-//		disciplines.load()
-//		print(disciplines)
+		let disciplines = Disciplines()
+		disciplines.load()
+		disciplines.add("Матан")
+		disciplines.remove(0)
+	}
+	
+	func testNotes() {
+		
+		let disciplines = Disciplines()
+		disciplines.add("Матан")
+		let discipline = disciplines.list.first as Discipline!
+		
+		let notes = Notes()
+		notes.load()
+		notes.add("Простые числа", discipline: discipline)
+		notes.add("Двойные интегралы", discipline: discipline)
+		notes.remove(0)
 	}
 	
 }
