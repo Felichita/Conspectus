@@ -8,18 +8,21 @@
 
 import UIKit
 
-private let reuseIdentifier = "Note"
-
 class NotesBoardViewController: UICollectionViewController {
+	
+	let navTitle = ""
+	let notes = Notes()
+	
+	private let reuseIdentifier = "Note"
+	private let sectionInsets = UIEdgeInsets(top: 25.0, left: 25.0, bottom: 25.0, right: 25.0)
 	
     @IBOutlet weak var menuButton: UIBarButtonItem!
 	
-    @IBAction func goDraw(sender: UIBarButtonItem) {
-		let targetStoryboard = UIStoryboard(name: "Canvas", bundle: nil)
-		if let targetViewController = targetStoryboard.instantiateInitialViewController() {
-			self.navigationController?.pushViewController(targetViewController, animated: true)
-		}
-    }
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+		self.navigationItem.title = navTitle
+		self.notes.load()
+	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -28,7 +31,7 @@ class NotesBoardViewController: UICollectionViewController {
 		// self.clearsSelectionOnViewWillAppear = false
 		
 		// Register cell classes
-		self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+		// self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 		
 		// Do any additional setup after loading the view.
 		if self.revealViewController() != nil {
@@ -37,77 +40,60 @@ class NotesBoardViewController: UICollectionViewController {
 			self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
 			self.revealViewController().rearViewRevealDisplacement = 0
 			self.revealViewController().rearViewRevealOverdraw = 0
-			self.revealViewController().rearViewRevealWidth = 275
-			
-			
+			self.revealViewController().rearViewRevealWidth = 325
 		}
 	}
 	
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
-	
-	/*
-	// MARK: - Navigation
-	
-	// In a storyboard-based application, you will often want to do a little preparation before navigation
-	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-	// Get the new view controller using [segue destinationViewController].
-	// Pass the selected object to the new view controller.
-	}
-	*/
-	
 	// MARK: UICollectionViewDataSource
-	
 	override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-		// #warning Incomplete implementation, return the number of sections
 		return 1
 	}
 	
 	
 	override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		// #warning Incomplete implementation, return the number of items
-		return 6
+		return self.notes.list.count + 1 // one for "add" cell
 	}
 	
 	override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
+		let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! NoteCollectionViewCell
 		
 		// Configure the cell
+		cell.backgroundColor = UIColor.darkGrayColor()
+		cell.layer.masksToBounds = true
+		cell.layer.cornerRadius = 6
+		cell.title.textColor = UIColor.whiteColor()
+		cell.createdDate.textColor = UIColor.whiteColor()
 		
+		if (indexPath.row != 0) {
+			let els = self.notes.list.count
+			let createdDate = self.notes.list[els - indexPath.row].createdDate
+			cell.title.text = self.notes.list[els - indexPath.row].title
+			cell.createdDate.text = createdDate.shortDate
+		} else { // "add" cell
+			cell.title.text = "Добавить запись"
+			cell.createdDate.text = ""
+		}
 		return cell
 	}
 	
-	// MARK: UICollectionViewDelegate
-	
-	/*
-	// Uncomment this method to specify if the specified item should be highlighted during tracking
-	override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-	return true
-	}
-	*/
-	
-	/*
-	// Uncomment this method to specify if the specified item should be selected
-	override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-	return true
-	}
-	*/
-	
-	/*
-	// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-	override func collectionView(collectionView: UICollectionView, shouldShowMenuForItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-	return false
+	// MARK: UICollectionLayoutDelegate
+	func collectionView(collectionView: UICollectionView, layout collecvtionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+		return CGSize(width: 305, height: 150)
 	}
 	
-	override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-	return false
+	func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+		return self.sectionInsets
 	}
 	
-	override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
 	
+	// MARK: - Navigation
+	override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+		
+		let targetStoryboard = UIStoryboard(name: "Canvas", bundle: nil)
+		if let targetViewController = targetStoryboard.instantiateInitialViewController() as? DrawingViewController {
+//			targetViewController.note
+			self.navigationController?.pushViewController(targetViewController, animated: true)
+		}
 	}
-	*/
 
 }

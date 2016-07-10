@@ -29,7 +29,12 @@ class Notes {
 	}
 	
 	func load() -> Void {
-		// some code
+		// some initial code
+		let notes = ["Двойные интегралы", "Простые числа", "Кривые Безье", "Криволинейный интеграл", "Ряды Фурье", "Интеграл Фурье"]
+		let discipline = Discipline(name: "Матан")
+		for n in notes {
+			self.add(n, discipline: discipline)
+		}
 	}
 	
 }

@@ -26,7 +26,12 @@ class Disciplines {
 	}
 	
 	func load() -> Void {
-		// some code
+		// some initial code
+		let disciplines = ["Матан", "Химия", "Языки и методы", "Дифференциальные уравнения", "Теория вероятности", "Английский язык"]
+		for k in disciplines {
+			let discipline = Discipline(name: k)
+			self.list.append(discipline)
+		}
 	}
 	
 }

@@ -16,7 +16,7 @@
 		9FBE0C181D321AFF005B3244 /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE0C171D321AFF005B3244 /* TriangleLayer.swift */; };
 		9FBE0C1A1D321B67005B3244 /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE0C191D321B67005B3244 /* RectangleLayer.swift */; };
 		9FBE0C1C1D321BDA005B3244 /* ArcLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE0C1B1D321BDA005B3244 /* ArcLayer.swift */; };
-		9FBE0C1E1D321C28005B3244 /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE0C1D1D321C28005B3244 /* HolderView.swift */; };
+		9FBE0C1E1D321C28005B3244 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE0C1D1D321C28005B3244 /* LoaderView.swift */; };
 		9FBE0C201D3220EA005B3244 /* Loader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE0C1F1D3220EA005B3244 /* Loader.storyboard */; };
 		F511198A1D31FACD0075B71F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E611D315A650095AD20 /* AppDelegate.swift */; };
 		F511198B1D31FACD0075B71F /* Conspectus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E681D315A650095AD20 /* Conspectus.xcdatamodeld */; };
@@ -28,6 +28,8 @@
 		F51119951D3201910075B71F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51119941D3201910075B71F /* SWRevealViewController.m */; };
 		F51119971D3209CA0075B71F /* NotesBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51119961D3209CA0075B71F /* NotesBoardViewController.swift */; };
 		F511199C1D320CF80075B71F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511199B1D320CF80075B71F /* MenuViewController.swift */; };
+		F51119A01D321BCF0075B71F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511199F1D321BCF0075B71F /* Utils.swift */; };
+		F51119A21D323FD80075B71F /* NoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51119A11D323FD80075B71F /* NoteCollectionViewCell.swift */; };
 		F57113C21D31830D00FDA679 /* NotesBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57113C11D31830D00FDA679 /* NotesBoard.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +70,7 @@
 		9FBE0C171D321AFF005B3244 /* TriangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleLayer.swift; sourceTree = "<group>"; };
 		9FBE0C191D321B67005B3244 /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
 		9FBE0C1B1D321BDA005B3244 /* ArcLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcLayer.swift; sourceTree = "<group>"; };
-		9FBE0C1D1D321C28005B3244 /* HolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
+		9FBE0C1D1D321C28005B3244 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		9FBE0C1F1D3220EA005B3244 /* Loader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loader.storyboard; sourceTree = "<group>"; };
 		F500ADCE1D31EC6C00BC4E5F /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		F51119921D3201900075B71F /* Conspectus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Conspectus-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -76,6 +78,8 @@
 		F51119941D3201910075B71F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		F51119961D3209CA0075B71F /* NotesBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesBoardViewController.swift; sourceTree = "<group>"; };
 		F511199B1D320CF80075B71F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F511199F1D321BCF0075B71F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F51119A11D323FD80075B71F /* NoteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCollectionViewCell.swift; sourceTree = "<group>"; };
 		F57113BF1D31779200FDA679 /* Disciplines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disciplines.swift; sourceTree = "<group>"; usesTabs = 1; };
 		F57113C11D31830D00FDA679 /* NotesBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotesBoard.storyboard; sourceTree = "<group>"; };
 		F57113C41D31842C00FDA679 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,8 +138,8 @@
 				F548E40B1D31759700373D84 /* Application */,
 				9FBE0C131D321A49005B3244 /* Loader */,
 				F51119981D320CAE0075B71F /* Menu */,
-				F548E40C1D3175B300373D84 /* Drawing */,
 				F57113BE1D31767000FDA679 /* NotesBoard */,
+				F548E40C1D3175B300373D84 /* Drawing */,
 				F57113BD1D31765300FDA679 /* Models */,
 				F548E40D1D3175CF00373D84 /* Supporting Files */,
 			);
@@ -163,10 +167,10 @@
 		9FBE0C131D321A49005B3244 /* Loader */ = {
 			isa = PBXGroup;
 			children = (
-				F57113C41D31842C00FDA679 /* ViewController.swift */,
-				9FBE0C1D1D321C28005B3244 /* HolderView.swift */,
-				9FBE0C1F1D3220EA005B3244 /* Loader.storyboard */,
 				9FBE0C141D321A64005B3244 /* Layer */,
+				F57113C41D31842C00FDA679 /* ViewController.swift */,
+				9FBE0C1D1D321C28005B3244 /* LoaderView.swift */,
+				9FBE0C1F1D3220EA005B3244 /* Loader.storyboard */,
 			);
 			name = Loader;
 			sourceTree = "<group>";
@@ -204,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				9FA41E611D315A650095AD20 /* AppDelegate.swift */,
+				F511199F1D321BCF0075B71F /* Utils.swift */,
 				9FA41E681D315A650095AD20 /* Conspectus.xcdatamodeld */,
 			);
 			name = Application;
@@ -243,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				F51119961D3209CA0075B71F /* NotesBoardViewController.swift */,
+				F51119A11D323FD80075B71F /* NoteCollectionViewCell.swift */,
 				F57113C11D31830D00FDA679 /* NotesBoard.storyboard */,
 			);
 			name = NotesBoard;
@@ -400,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51119A21D323FD80075B71F /* NoteCollectionViewCell.swift in Sources */,
 				F511198A1D31FACD0075B71F /* AppDelegate.swift in Sources */,
 				9FBE0C161D321A82005B3244 /* OvalLayer.swift in Sources */,
 				9FBE0C1A1D321B67005B3244 /* RectangleLayer.swift in Sources */,
@@ -410,9 +417,10 @@
 				F51119971D3209CA0075B71F /* NotesBoardViewController.swift in Sources */,
 				F51119951D3201910075B71F /* SWRevealViewController.m in Sources */,
 				F511198D1D31FACD0075B71F /* DrawingViewController.swift in Sources */,
+				F51119A01D321BCF0075B71F /* Utils.swift in Sources */,
 				F511198E1D31FACD0075B71F /* CanvasView.swift in Sources */,
 				9FBE0C181D321AFF005B3244 /* TriangleLayer.swift in Sources */,
-				9FBE0C1E1D321C28005B3244 /* HolderView.swift in Sources */,
+				9FBE0C1E1D321C28005B3244 /* LoaderView.swift in Sources */,
 				F511198F1D31FACD0075B71F /* Disciplines.swift in Sources */,
 				F51119901D31FACD0075B71F /* Notes.swift in Sources */,
 			);
