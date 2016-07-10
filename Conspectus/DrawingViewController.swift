@@ -10,7 +10,8 @@ import UIKit
 
 
 class DrawingViewController: UIViewController {
-
+	
+//	let note: Note
 	
     @IBOutlet weak var permanentView: CanvasView!
 	

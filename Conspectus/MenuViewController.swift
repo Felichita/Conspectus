@@ -9,21 +9,17 @@
 import UIKit
 
 class MenuViewController: UITableViewController {
+	
+	let disciplines = Disciplines()
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+		super.viewDidLoad()
+		self.tableView.sectionHeaderHeight = 70
+		self.tableView.backgroundColor = UIColor.menuColor()
+		self.tableView.separatorColor = UIColor.separatorColor()
+		self.tableView.tableFooterView = UIView(frame: CGRectZero) // This will remove extra separators from tableView
+		self.disciplines.load()
+	}
 
     // MARK: - Table view data source
 
@@ -32,52 +28,34 @@ class MenuViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return disciplines.list.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MenuCell", forIndexPath: indexPath)
 
         // Configure the cell...
-		cell.textLabel?.text = "Test"
+		cell.backgroundColor = UIColor.menuColor()
+		cell.textLabel?.font = UIFont(name: "Helvetica Neue", size: 18)
+		cell.textLabel?.text = disciplines.list[indexPath.row].name
+		cell.textLabel?.textColor = UIColor.whiteColor()
+		cell.selectedBackgroundView = UIView()
+		cell.selectedBackgroundView!.backgroundColor = UIColor.selectedMenuColor()
 
         return cell
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
+	
+	override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+		
+		let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 20))
+		let label = UILabel(frame: CGRect(x: 20, y: 20, width: tableView.frame.size.width, height: 50))
+		label.text = "Предметы"
+		label.font = UIFont(name: "Helvetica Bold", size: 22)
+		label.textColor = UIColor.whiteColor()
+		view.addSubview(label)
+		
+		return view
+	}
 
     /*
     // MARK: - Navigation
