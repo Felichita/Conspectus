@@ -8,11 +8,12 @@
 
 import UIKit
 
-protocol HolderViewDelegate:class {
-	func animateLabel()
+protocol LoaderViewDelegate: class {
+	func addLoader()
+	func loaderFinished()
 }
 
-class HolderView: UIView {
+class LoaderView: UIView {
 	
 	let ovalLayer = OvalLayer()
 	let triangleLayer = TriangleLayer()
@@ -20,8 +21,8 @@ class HolderView: UIView {
 	let blueRectangleLayer = RectangleLayer()
 	let arcLayer = ArcLayer()
 	
-	var parentFrame :CGRect = CGRectZero
-	weak var delegate:HolderViewDelegate?
+	var parentFrame: CGRect = CGRectZero
+	weak var delegate: LoaderViewDelegate?
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -35,48 +36,46 @@ class HolderView: UIView {
 	func addOval() {
 		layer.addSublayer(ovalLayer)
 		ovalLayer.expand()
-		NSTimer.scheduledTimerWithTimeInterval(0.3, target: self, selector: #selector(HolderView.wobbleOval),
+		NSTimer.scheduledTimerWithTimeInterval(0.3, target: self,
+		                                       selector: #selector(LoaderView.wobbleOval),
 		                                       userInfo: nil, repeats: false)
 	}
 	
 	func wobbleOval() {
 		ovalLayer.wobble()
 
-		layer.addSublayer(triangleLayer) // Add this line
+		layer.addSublayer(triangleLayer)
 		ovalLayer.wobble()
-		
 
-		// Add the code below
-		NSTimer.scheduledTimerWithTimeInterval(0.9, target: self,
-		                                       selector: #selector(HolderView.drawAnimatedTriangle), userInfo: nil,
-		                                       repeats: false)
+		NSTimer.scheduledTimerWithTimeInterval(0.6, target: self,
+		                                       selector: #selector(LoaderView.drawAnimatedTriangle),
+		                                       userInfo: nil, repeats: false)
 	}
 	
 	func drawAnimatedTriangle() {
 		triangleLayer.animate()
-		NSTimer.scheduledTimerWithTimeInterval(0.9, target: self, selector: #selector(HolderView.spinAndTransform),
+		NSTimer.scheduledTimerWithTimeInterval(0.7, target: self,
+		                                       selector: #selector(LoaderView.spinAndTransform),
 		                                       userInfo: nil, repeats: false)
 	}
 	
 	func spinAndTransform() {
 
 		layer.anchorPoint = CGPointMake(0.5, 0.6)
-		
 
 		let rotationAnimation: CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
 		rotationAnimation.toValue = CGFloat(M_PI * 2.0)
 		rotationAnimation.duration = 0.45
 		rotationAnimation.removedOnCompletion = true
 		layer.addAnimation(rotationAnimation, forKey: nil)
-		
 
 		ovalLayer.contract()
 		
-		NSTimer.scheduledTimerWithTimeInterval(0.45, target: self,
-		                                       selector: #selector(HolderView.drawRedAnimatedRectangle),
+		NSTimer.scheduledTimerWithTimeInterval(0.25, target: self,
+		                                       selector: #selector(LoaderView.drawRedAnimatedRectangle),
 		                                       userInfo: nil, repeats: false)
-		NSTimer.scheduledTimerWithTimeInterval(0.65, target: self,
-		                                       selector: #selector(HolderView.drawBlueAnimatedRectangle),
+		NSTimer.scheduledTimerWithTimeInterval(0.45, target: self,
+		                                       selector: #selector(LoaderView.drawBlueAnimatedRectangle),
 		                                       userInfo: nil, repeats: false)
 	}
 	
@@ -88,34 +87,21 @@ class HolderView: UIView {
 	func drawBlueAnimatedRectangle() {
 		layer.addSublayer(blueRectangleLayer)
 		blueRectangleLayer.animateStrokeWithColor(UIColor.blueColor())
-		NSTimer.scheduledTimerWithTimeInterval(0.40, target: self, selector: #selector(HolderView.drawArc),
+		NSTimer.scheduledTimerWithTimeInterval(0.30, target: self,
+		                                       selector: #selector(LoaderView.drawArc),
 		                                       userInfo: nil, repeats: false)
 	}
 	
 	func drawArc() {
 		layer.addSublayer(arcLayer)
 		arcLayer.animate()
-		NSTimer.scheduledTimerWithTimeInterval(0.90, target: self, selector: #selector(HolderView.expandView),
+		NSTimer.scheduledTimerWithTimeInterval(0.80, target: self,
+		                                       selector: #selector(LoaderView.expandView),
 		                                       userInfo: nil, repeats: false)
 	}
 	
 	func expandView() {
-		backgroundColor = UIColor.blueColor()
-		frame = CGRectMake(frame.origin.x - blueRectangleLayer.lineWidth,
-		                   frame.origin.y - blueRectangleLayer.lineWidth,
-		                   frame.size.width + blueRectangleLayer.lineWidth * 2,
-		                   frame.size.height + blueRectangleLayer.lineWidth * 2)
-		layer.sublayers = nil
-		
-		UIView.animateWithDuration(0.3, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
-			self.frame = self.parentFrame
-			}, completion: { finished in
-				self.addLabel()
-		})
-	}
-	
-	func addLabel() {
-		delegate?.animateLabel()
+		self.delegate?.loaderFinished()
 	}
 	
 }

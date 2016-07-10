@@ -3,14 +3,14 @@
 //  Conspectus
 //
 //  Created by Никита on 09.07.16.
-//  Copyright © 2016 PinkElephants. All rights reserved.
+//  Copyright © 2016 Pink Elephants. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, LoaderViewDelegate {
 
-	var holderView = HolderView(frame: CGRectZero)
+	var loaderView = LoaderView(frame: CGRectZero)
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -18,60 +18,31 @@ class ViewController: UIViewController {
 	
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
-		addHolderView()
+		self.addLoader()
 	}
 	
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-	}
-	
-	func addHolderView() {
+	func addLoader() {
 		let boxSize: CGFloat = 100.0
-		holderView.frame = CGRect(x: view.bounds.width / 2 - boxSize / 2,
+		loaderView.frame = CGRect(x: view.bounds.width / 2 - boxSize / 2,
 		                          y: view.bounds.height / 2 - boxSize / 2,
 		                          width: boxSize,
 		                          height: boxSize)
-		holderView.parentFrame = view.frame
-		holderView.delegate = self.holderView.delegate
-		view.addSubview(holderView)
-		holderView.addOval()
+		loaderView.parentFrame = view.frame
+		loaderView.delegate = self
+		view.addSubview(loaderView)
+		loaderView.addOval()
 	}
 	
-	func animateLabel() {
-		// 1
-		holderView.removeFromSuperview()
-		view.backgroundColor = UIColor.blueColor()
-		
-		// 2
-		let label: UILabel = UILabel(frame: view.frame)
-		label.textColor = UIColor.whiteColor()
-		label.font = UIFont(name: "HelveticaNeue-Thin", size: 170.0)
-		label.textAlignment = NSTextAlignment.Center
-		label.text = "S"
-		label.transform = CGAffineTransformScale(label.transform, 0.25, 0.25)
-		view.addSubview(label)
-		
-		// 3
-		UIView.animateWithDuration(0.4, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.1, options: UIViewAnimationOptions.CurveEaseInOut,
-		                           animations: ({
-									label.transform = CGAffineTransformScale(label.transform, 4.0, 4.0)
-								}), completion: { finished in
-									self.targetBoard("notesBoard")
-		})
+	func loaderFinished() {
+		loaderView.removeFromSuperview()
+		self.showMainScreen()
 	}
 	
-	func targetBoard(name:String){
-		let targetStoryboard = UIStoryboard(name: name, bundle: nil)
+	func showMainScreen() {
+		let targetStoryboard = UIStoryboard(name: "NotesBoard", bundle: nil)
 		if let targetViewController = targetStoryboard.instantiateInitialViewController() {
 			self.navigationController?.pushViewController(targetViewController, animated: true)
 		}
 	}
 	
-	
-	func buttonPressed(sender: UIButton!) {
-		view.backgroundColor = UIColor.whiteColor()
-		// view.subviews.map({ $0.removeFromSuperview() })
-		holderView = HolderView(frame: CGRectZero)
-		addHolderView()
-	}
 }

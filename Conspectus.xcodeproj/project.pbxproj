@@ -16,7 +16,7 @@
 		9FBE0C181D321AFF005B3244 /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE0C171D321AFF005B3244 /* TriangleLayer.swift */; };
 		9FBE0C1A1D321B67005B3244 /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE0C191D321B67005B3244 /* RectangleLayer.swift */; };
 		9FBE0C1C1D321BDA005B3244 /* ArcLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE0C1B1D321BDA005B3244 /* ArcLayer.swift */; };
-		9FBE0C1E1D321C28005B3244 /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE0C1D1D321C28005B3244 /* HolderView.swift */; };
+		9FBE0C1E1D321C28005B3244 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE0C1D1D321C28005B3244 /* LoaderView.swift */; };
 		9FBE0C201D3220EA005B3244 /* Loader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE0C1F1D3220EA005B3244 /* Loader.storyboard */; };
 		F511198A1D31FACD0075B71F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E611D315A650095AD20 /* AppDelegate.swift */; };
 		F511198B1D31FACD0075B71F /* Conspectus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FA41E681D315A650095AD20 /* Conspectus.xcdatamodeld */; };
@@ -70,7 +70,7 @@
 		9FBE0C171D321AFF005B3244 /* TriangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleLayer.swift; sourceTree = "<group>"; };
 		9FBE0C191D321B67005B3244 /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
 		9FBE0C1B1D321BDA005B3244 /* ArcLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcLayer.swift; sourceTree = "<group>"; };
-		9FBE0C1D1D321C28005B3244 /* HolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
+		9FBE0C1D1D321C28005B3244 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		9FBE0C1F1D3220EA005B3244 /* Loader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loader.storyboard; sourceTree = "<group>"; };
 		F500ADCE1D31EC6C00BC4E5F /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		F51119921D3201900075B71F /* Conspectus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Conspectus-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -167,10 +167,10 @@
 		9FBE0C131D321A49005B3244 /* Loader */ = {
 			isa = PBXGroup;
 			children = (
-				F57113C41D31842C00FDA679 /* ViewController.swift */,
-				9FBE0C1D1D321C28005B3244 /* HolderView.swift */,
-				9FBE0C1F1D3220EA005B3244 /* Loader.storyboard */,
 				9FBE0C141D321A64005B3244 /* Layer */,
+				F57113C41D31842C00FDA679 /* ViewController.swift */,
+				9FBE0C1D1D321C28005B3244 /* LoaderView.swift */,
+				9FBE0C1F1D3220EA005B3244 /* Loader.storyboard */,
 			);
 			name = Loader;
 			sourceTree = "<group>";
@@ -420,7 +420,7 @@
 				F51119A01D321BCF0075B71F /* Utils.swift in Sources */,
 				F511198E1D31FACD0075B71F /* CanvasView.swift in Sources */,
 				9FBE0C181D321AFF005B3244 /* TriangleLayer.swift in Sources */,
-				9FBE0C1E1D321C28005B3244 /* HolderView.swift in Sources */,
+				9FBE0C1E1D321C28005B3244 /* LoaderView.swift in Sources */,
 				F511198F1D31FACD0075B71F /* Disciplines.swift in Sources */,
 				F51119901D31FACD0075B71F /* Notes.swift in Sources */,
 			);
